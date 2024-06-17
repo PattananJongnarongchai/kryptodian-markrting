@@ -92,7 +92,7 @@ const CryptoTable: React.FC<CryptoTableProps> = ({ interval = 60000 }) => {
             fontSize: "2rem",
           }}
         >
-          Market Overview
+         Overview
         </Typography>
       </Grid>
       <Grid item xs={12} container spacing={2} justifyContent="center">
