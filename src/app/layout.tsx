@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "./globals.css"
 import HaederNavigationBar from "@/components/header";
 import Dashboard from "@/pages/dashboard";
 
@@ -18,10 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <HaederNavigationBar />
-      <Dashboard />
-      <body className={inter.className}>{children}</body>
-      
+      <body className={inter.className}>
+        <HaederNavigationBar />
+        <Dashboard />
+        {children}
+      </body>
     </html>
   );
 }
